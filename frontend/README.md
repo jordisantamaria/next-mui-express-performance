@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+
+## Install material-ui
+
+```
+yarn add @mui/material @emotion/react @emotion/styled
+yarn add @mui/icons-material
+```
 ## Getting Started
 
 First, run the development server:
