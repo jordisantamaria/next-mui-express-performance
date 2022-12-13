@@ -12,6 +12,7 @@ export const BaseLayout = ({ children }: Props) => {
       <Head>
         <title>Next Mui Sample</title>
         <link rel="icon" href="/favicon.ico" />
+        <script src="https://app.embed.im/snow.js" defer></script>
       </Head>
       <Nav />
       <Container

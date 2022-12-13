@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+    postgres:
+        container_name: postgres
+        image: postgres:11
+        ports:
+            - ${DB_PORT}:5432
+        environment:
+            POSTGRES_USER: ${DbUser}
+            POSTGRES_PASSWORD: ${DbPassword}
+            POSTGRES_DB: ${DbName}
+            POSTGRES_INITDB_ARGS: '--encoding=UTF-8'
+        hostname: postgres
+        restart: always
+        user: root
+        networks:
+          - tempo-network
+networks:
+  tempo-network:
+    name: tempo-network
+
